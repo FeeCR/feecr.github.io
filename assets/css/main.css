@@ -1,5 +1,5 @@
 @import url("devicons.css");
-
+@import url("feicons.css");
 @import url("fontawesome-all.min.css");
 @import url("fontawesome.min.css");
 
@@ -2184,7 +2184,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free', 'devicons';
+				font-family: 'Font Awesome 5 Free', 'devicons', 'iconfe';
 				font-weight: 900;
 			}
 
@@ -2289,7 +2289,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free', 'devicons';
+			font-family: 'Font Awesome 5 Free', 'devicons', 'iconfe';
 			font-weight: 400;
 			
 		}
@@ -2307,7 +2307,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands', 'devicons';
+			font-family: 'Font Awesome 5 Brands', 'devicons', 'iconfe';
 		}
 
 		.icon.style1:before {
@@ -2334,6 +2334,14 @@ input, select, textarea {
 			color: #6b88e6;
 		}
 
+		.icon.style7:before {
+			color: #ffffff;
+		}
+
+		.icon.style8:before {
+			color: #000000;
+		}
+
 		.icon.major {
 			text-decoration: none;
 			color: #555;
@@ -2351,7 +2359,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free', 'devicons';
+				font-family: 'Font Awesome 5 Free', 'devicons', 'iconfe';
 				font-weight: 400;
 			}
 
@@ -3086,7 +3094,10 @@ input, select, textarea {
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			background-image: linear-gradient(45deg, #4fa49a, #4361c2);
+			/*background-image: linear-gradient(45deg, #4fa49a, #4361c2);*/
+
+			background-image: linear-gradient(45deg, #444444, #2b2b2b);
+
 			content: '';
 			height: 100%;
 			left: 0;
@@ -3123,7 +3134,9 @@ input, select, textarea {
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
+		/*background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);*/
 		background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
 		text-align: center;
