@@ -36,7 +36,12 @@
     renderer="logarithmicDepthBuffer: true;"
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+
+	
   >
+  	<a-assets>
+		<img id="textureAndorinha" src="../images/tracker/andorinhaTeste.png">
+	</a-assets>
     <!-- a-nft is the anchor that defines an Image Tracking entity -->
     <!-- on 'url' use the path to the Image Descriptors created before. -->
     <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
@@ -49,12 +54,8 @@
       smoothThreshold="5"
     >
         <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
-        <a-entity
-                gltf-model='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf'
-                scale="5 5 5"
-                position="50 150 -100"
-                >
-            </a-entity>
+		<a-plane src="#textureAndorinha" height="100" width="100" rotation="-90 0 0"></a-plane>
+
     </a-nft>
     <!-- static camera that moves according to the device movemenents -->
     <a-entity camera></a-entity>
